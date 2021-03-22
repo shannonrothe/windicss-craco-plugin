@@ -51,13 +51,21 @@ module.exports = {
 };
 ```
 
+Make sure you have installed `windicss` and add the virtual module to your `index.(j|t)sx?` file:
+
+```tsx
+import "windi.css";
+```
+
 ## Migration
 
 If you are already using Tailwind CSS for your app, please consult the [documentation](https://windicss.netlify.app/guide/migration.html) on migrating.
 
 ## Notes
 
-This plugin comes with [https://github.com/windicss/windicss-webpack-plugin](windicss-webpack-plugin) integrated already. Options passed via the `options` property as above will be passed directly to the `windicss-webpack-plugin` constructor.
+This plugin comes with [windicss-webpack-plugin](https://github.com/windicss/windicss-webpack-plugin) integrated already. Options passed via the `options` property as above will be passed directly to the `windicss-webpack-plugin` constructor.
+
+By default, the following directories and files are excluded: `node_modules`, `.git`, and `public/index.html`.
 
 ## Credits
 
