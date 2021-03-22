@@ -41,13 +41,6 @@ export default {
 };
 ```
 
-Paired with the configuration provided in
-
-```js
-// main.js
-import "windi.css";
-```
-
 ## Migration
 
 If you are already using Tailwind CSS for your app, please consult the [documentation](https://windicss.netlify.app/guide/migration.html) on migrating.
