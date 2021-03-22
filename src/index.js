@@ -15,8 +15,8 @@ module.exports = {
     const windiCSSWebpackConfig = {
       ...pluginOptions,
       scan: {
-        ...pluginOptions.scan,
-        exclude: pluginOptions.scan.exclude ?? defaultExclusions,
+        ...pluginOptions?.scan,
+        exclude: pluginOptions?.scan?.exclude ?? defaultExclusions,
       },
     };
 
