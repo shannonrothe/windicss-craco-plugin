@@ -35,9 +35,19 @@ Modify your `craco.config.js` file as below:
 // craco.config.js
 const windiCSSCracoPlugin = require("windicss-craco-plugin");
 
-export default {
+module.exports = {
   // ...
-  plugins: [{ plugin: windiCSSCracoPlugin }],
+  plugins: [
+    {
+      plugin: windiCSSCracoPlugin,
+      options: {
+        scan: {
+          dirs: ["./"],
+          exclude: ["node_modules", ".git", "public/index.html"],
+        },
+      },
+    },
+  ],
 };
 ```
 
@@ -45,15 +55,9 @@ export default {
 
 If you are already using Tailwind CSS for your app, please consult the [documentation](https://windicss.netlify.app/guide/migration.html) on migrating.
 
-### All set.
+## Notes
 
-That's all, fire up your app and enjoy the speed!
-
-## Caveats
-
-## windicss-webpack-plugin
-
-This plugin should be used in conjunction with the [windicss-webpack-plugin](https://github.com/windicss/windicss-webpack-plugin) since it overrides Webpack configuration.
+This plugin comes with [https://github.com/windicss/windicss-webpack-plugin](windicss-webpack-plugin) integrated already. Options passed via the `options` property as above will be passed directly to the `windicss-webpack-plugin` constructor.
 
 ## Credits
 

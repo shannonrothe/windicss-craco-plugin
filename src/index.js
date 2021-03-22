@@ -1,3 +1,5 @@
+const WindiCSSWebpackPlugin = require("windicss-webpack-plugin").default;
+
 module.exports = {
   overrideWebpackConfig: ({
     webpackConfig,
@@ -10,6 +12,8 @@ module.exports = {
     );
 
     webpackConfig.resolve.plugins.splice(scopePluginIndex, 1);
+    webpackConfig.plugins.push(new WindiCSSWebpackPlugin({ ...pluginOptions }));
+
     return webpackConfig;
   },
 };
