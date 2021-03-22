@@ -1,6 +1,6 @@
 {
   "name": "windicss-craco-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Shannon Rothe",
     "email": "shannon.michael.rothe@gmail.com"
@@ -18,7 +18,7 @@
     "windicss"
   ],
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "windicss-webpack-plugin": "^0.2.6"
   }
 }
