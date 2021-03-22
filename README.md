@@ -5,8 +5,8 @@
 </p>
 
 <p align='center'>
-<a href='https://www.npmjs.com/package/windicss-webpack-plugin'>
-<img src='https://img.shields.io/npm/v/windicss-webpack-plugin?color=0EA5E9&label='>
+<a href='https://www.npmjs.com/package/windicss-craco-plugin'>
+<img src='https://img.shields.io/npm/v/windicss-craco-plugin?color=0EA5E9&label='>
 </a>
 </p>
 
