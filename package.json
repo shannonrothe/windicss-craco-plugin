@@ -1,0 +1,21 @@
+{
+  "name": "windicss-craco-plugin",
+  "version": "0.1.0",
+  "author": {
+    "name": "Shannon Rothe",
+    "email": "shannon.michael.rothe@gmail.com"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": "https://github.com/windicss/windicss-craco-plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "craco",
+    "windicss"
+  ],
+  "license": "MIT"
+}
