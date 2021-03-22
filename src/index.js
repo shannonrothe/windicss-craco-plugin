@@ -5,17 +5,18 @@ module.exports = {
   overrideWebpackConfig: ({
     webpackConfig,
     pluginOptions,
-    context: { env: paths },
+    context: { env, paths },
   }) => {
     const scopePluginIndex = webpackConfig.resolve.plugins.findIndex(
       ({ constructor }) =>
         constructor && constructor.name === "ModuleScopePlugin"
     );
 
+    const baseScanOptions = pluginOptions ? pluginOptions.scan : {};
     const windiCSSWebpackConfig = {
       ...pluginOptions,
       scan: {
-        ...pluginOptions?.scan,
+        ...baseScanOptions,
         exclude: pluginOptions?.scan?.exclude ?? defaultExclusions,
       },
     };
